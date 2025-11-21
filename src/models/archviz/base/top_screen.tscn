@@ -58,7 +58,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_2fytb")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_qu87i"]
-size = Vector2(320, 122.5)
+size = Vector2(64, 24.5)
 orientation = 0
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_ya2b3"]
@@ -71,7 +71,7 @@ albedo_texture = SubResource("ViewportTexture_ya2b3")
 [node name="top_screen" type="Node3D"]
 
 [node name="top_screen" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_6nfoh")
 skeleton = NodePath("")
 surface_material_override/0 = ExtResource("1_86f6k")
@@ -91,6 +91,6 @@ stream = ExtResource("2_rmj6o")
 autoplay = true
 
 [node name="VideoScreen" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0324993, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3856678, 0, 0)
 mesh = SubResource("PlaneMesh_qu87i")
 surface_material_override/0 = SubResource("StandardMaterial3D_8y34w")
