@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=4 uid="uid://bh4rl7rr7piep"]
+
+[ext_resource type="Material" uid="uid://c8so65mjfnbdv" path="res://materials/glass/glass_01.tres" id="1_wdbif"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kbipu"]
+resource_name = "CSP Glass"
+cull_mode = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_n64bc"]
+_surfaces = [{
+"aabb": AABB(-100.469536, -291.66858, -4.0414805, 200.93909, 602.2523, 8.082975),
+"format": 34359783425,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAAAEAAEAAgADAAUAAgAFAAAAAAAGAAQAAAAFAAYABAAHAAEAAQAHAAMABAAGAAcABQADAAcABQAHAAYA"),
+"name": "CSP Glass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("Z/DIwrhKm0PPU4HAafDIQpTVkcPPU4HAafDIQrhKm0PPU4HAafDIQrhKm0PtU4FAZ/DIwpTVkcPPU4HAZ/DIwrhKm0PtU4FAZ/DIwpTVkcPtU4FAafDIQpTVkcPtU4FA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tevfm"]
+resource_name = "window_tall_AI44_001_wall_001_001"
+_surfaces = [{
+"aabb": AABB(-100.469536, -291.66858, -4.0414805, 200.93909, 602.2523, 8.082975),
+"attribute_data": PackedByteArray("1adFwGa8OkAAAAAAAACAPwAAAAAAAIA/pzV4QCfB1cAAAAAAAACAPwAAAAAAAIA/1qdFwDSuEEAAAAAAAACAPwAAAAAAAIA/OSxOv4AgoEAAAAAAAACAPwAAAAAAAIA/1adFwGa8OkAAAAAAAACAPwAAAAAAAIA/pzV4QCfB1cAAAAAAAACAPwAAAAAAAIA/OSxOv4AgoEAAAAAAAACAPwAAAAAAAIA/1qdFwDSuEEAAAAAAAACAPwAAAAAAAIA/pzV4QCfB1cAAAAAAAACAPwAAAAAAAIA/1qdFwDSuEEAAAAAAAACAPwAAAAAAAIA/1qdFwDSuEEAAAAAAAACAPwAAAAAAAIA/pzV4QCfB1cAAAAAAAACAPwAAAAAAAIA/1qdFwDSuEEAAAAAAAACAPwAAAAAAAIA/1adFwGa8OkAAAAAAAACAPwAAAAAAAIA/1adFwGa8OkAAAAAAAACAPwAAAAAAAIA/1qdFwDSuEEAAAAAAAACAPwAAAAAAAIA/1adFwGa8OkAAAAAAAACAPwAAAAAAAIA/OSxOv4AgoEAAAAAAAACAPwAAAAAAAIA/OSxOv4AgoEAAAAAAAACAPwAAAAAAAIA/1adFwGa8OkAAAAAAAACAPwAAAAAAAIA/OSxOv4AgoEAAAAAAAACAPwAAAAAAAIA/pzV4QCfB1cAAAAAAAACAPwAAAAAAAIA/pzV4QCfB1cAAAAAAAACAPwAAAAAAAIA/OSxOv4AgoEAAAAAAAACAPwAAAAAAAIA/"),
+"format": 34359783543,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_kbipu"),
+"name": "CSP Glass",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("Z/DIwrhKm0PPU4HAafDIQpTVkcPPU4HAafDIQrhKm0PPU4HAZ/DIwpTVkcPPU4HAZ/DIwrhKm0PtU4FAafDIQpTVkcPtU4FAZ/DIwpTVkcPtU4FAafDIQrhKm0PtU4FAafDIQpTVkcPPU4HAafDIQrhKm0PtU4FAafDIQrhKm0PPU4HAafDIQpTVkcPtU4FAafDIQrhKm0PPU4HAZ/DIwrhKm0PtU4FAZ/DIwrhKm0PPU4HAafDIQrhKm0PtU4FAZ/DIwrhKm0PPU4HAZ/DIwpTVkcPtU4FAZ/DIwpTVkcPPU4HAZ/DIwrhKm0PtU4FAZ/DIwpTVkcPPU4HAafDIQpTVkcPtU4FAafDIQpTVkcPPU4HAZ/DIwpTVkcPtU4FA/////y8qF1X/////PGwedv////8bF41L/////zGHZnz/f/9/Lyrnqv9//388bOCJ/3//fzGHmIP/f/9/GxdxtP///3////+/////f////7////9/////v////3////+//3///////7//f///////v/9///////+//3///////78AAP9/////vwAA/3////+/AAD/f////78AAP9/////v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_n64bc")
+
+[node name="window_tall" type="Node3D"]
+
+[node name="glass_01" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_tevfm")
+skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_wdbif")
