@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dayab1qggdyu7"]
+[gd_scene load_steps=6 format=3 uid="uid://dayab1qggdyu7"]
 
 [ext_resource type="Texture2D" uid="uid://djg1bicw7rgqg" path="res://assets/HDRI/golden_bay_2k.hdr" id="1_1o0ef"]
 [ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="2_1o0ef"]
-[ext_resource type="PackedScene" uid="uid://1inwv0rgomel" path="res://models/archviz/base/top_screen.tscn" id="2_gw0ce"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_gw0ce"]
 panorama = ExtResource("1_1o0ef")
@@ -18,9 +17,6 @@ tonemap_exposure = 1.5
 glow_enabled = true
 
 [node name="Scene Test" type="Node3D"]
-
-[node name="top_screen" parent="." instance=ExtResource("2_gw0ce")]
-transform = Transform3D(-2.8412401e-08, 0, 0.65, 0, 0.65, 0, -0.65, 0, -2.8412401e-08, 0, 21.726, 252.335)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_qhnpt")
