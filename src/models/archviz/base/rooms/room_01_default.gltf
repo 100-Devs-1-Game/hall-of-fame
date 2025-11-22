@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.5.49",
+		"generator":"Khronos glTF Blender I/O v5.0.21",
 		"version":"2.0"
 	},
 	"scene":0,
@@ -15,7 +15,18 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"room_01"
+			"name":"room_01",
+			"rotation":[
+				0,
+				-1,
+				0,
+				1.6292068494294654e-07
+			],
+			"translation":[
+				0,
+				110.33393859863281,
+				0
+			]
 		}
 	],
 	"meshes":[
@@ -31,6 +42,16 @@
 						"TEXCOORD_2":4
 					},
 					"indices":5
+				},
+				{
+					"attributes":{
+						"POSITION":6,
+						"NORMAL":7,
+						"TEXCOORD_0":8,
+						"TEXCOORD_1":9,
+						"TEXCOORD_2":10
+					},
+					"indices":11
 				}
 			]
 		}
@@ -41,7 +62,7 @@
 			"componentType":5126,
 			"count":158,
 			"max":[
-				229.9564971923828,
+				229.95648193359375,
 				170.89056396484375,
 				212.8904266357422
 			],
@@ -81,6 +102,52 @@
 			"componentType":5123,
 			"count":288,
 			"type":"SCALAR"
+		},
+		{
+			"bufferView":6,
+			"componentType":5126,
+			"count":9,
+			"max":[
+				229.95648193359375,
+				-108.67574310302734,
+				212.8904266357422
+			],
+			"min":[
+				-269.610107421875,
+				-108.67574310302734,
+				-163.7617950439453
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":7,
+			"componentType":5126,
+			"count":9,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":8,
+			"componentType":5126,
+			"count":9,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":9,
+			"componentType":5126,
+			"count":9,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":10,
+			"componentType":5126,
+			"count":9,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":11,
+			"componentType":5123,
+			"count":21,
+			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
@@ -119,11 +186,47 @@
 			"byteLength":576,
 			"byteOffset":7584,
 			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":108,
+			"byteOffset":8160,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":108,
+			"byteOffset":8268,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":72,
+			"byteOffset":8376,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":72,
+			"byteOffset":8448,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":72,
+			"byteOffset":8520,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":42,
+			"byteOffset":8592,
+			"target":34963
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":8160,
+			"byteLength":8636,
 			"uri":"room_01_default.bin"
 		}
 	]

@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.5.49",
+		"generator":"Khronos glTF Blender I/O v5.0.21",
 		"version":"2.0"
 	},
 	"scene":0,
@@ -19,23 +19,8 @@
 			"translation":[
 				-4.947235107421875,
 				0.7817569971084595,
-				-43.70371627807617
+				-216.10739135742188
 			]
-		}
-	],
-	"materials":[
-		{
-			"doubleSided":true,
-			"name":"Verde Alpi Marble",
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":0
-				},
-				"metallicFactor":0,
-				"metallicRoughnessTexture":{
-					"index":1
-				}
-			}
 		}
 	],
 	"meshes":[
@@ -49,39 +34,16 @@
 						"TEXCOORD_0":2,
 						"TEXCOORD_1":3
 					},
-					"indices":4,
-					"material":0
+					"indices":4
 				}
 			]
-		}
-	],
-	"textures":[
-		{
-			"sampler":0,
-			"source":0
-		},
-		{
-			"sampler":0,
-			"source":1
-		}
-	],
-	"images":[
-		{
-			"mimeType":"image/jpeg",
-			"name":"wlhkfhqv_2K_Albedo",
-			"uri":"wlhkfhqv_2K_Albedo.jpg"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"wlhkfhqv_2K_Roughness",
-			"uri":"wlhkfhqv_2K_Roughness.png"
 		}
 	],
 	"accessors":[
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":221,
+			"count":84,
 			"max":[
 				294.4582214355469,
 				0,
@@ -90,76 +52,70 @@
 			"min":[
 				-294.4582214355469,
 				-5.4234619140625,
-				-1643.828369140625
+				-1424.546630859375
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":221,
+			"count":84,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":221,
+			"count":84,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5126,
-			"count":221,
+			"count":84,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":4,
 			"componentType":5123,
-			"count":345,
+			"count":120,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":2652,
+			"byteLength":1008,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":2652,
-			"byteOffset":2652,
+			"byteLength":1008,
+			"byteOffset":1008,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":1768,
-			"byteOffset":5304,
+			"byteLength":672,
+			"byteOffset":2016,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":1768,
-			"byteOffset":7072,
+			"byteLength":672,
+			"byteOffset":2688,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":690,
-			"byteOffset":8840,
+			"byteLength":240,
+			"byteOffset":3360,
 			"target":34963
-		}
-	],
-	"samplers":[
-		{
-			"magFilter":9729,
-			"minFilter":9987
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":9532,
+			"byteLength":3600,
 			"uri":"floor_middle_marble.bin"
 		}
 	]
