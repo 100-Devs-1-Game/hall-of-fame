@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://we27rvv7jr1g"]
+
+[ext_resource type="Texture2D" uid="uid://nyysf237vqh" path="res://materials/marble/marble_02/marble_02_albedo.png" id="1_o4kn7"]
+[ext_resource type="Texture2D" uid="uid://bg8kgt1kjvrpg" path="res://materials/marble/marble_02/marble_02_rough.png" id="2_ct0cx"]
+
+[resource]
+albedo_texture = ExtResource("1_o4kn7")
+roughness_texture = ExtResource("2_ct0cx")

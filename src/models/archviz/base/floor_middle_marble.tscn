@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=4 uid="uid://clt7w2g6cgesb"]
 
-[ext_resource type="Material" uid="uid://coin2k0pho4c4" path="res://materials/marble/marble_01.tres" id="1_8ro0a"]
+[ext_resource type="Material" path="res://materials/marble/marble_01/marble_01.tres" id="1_8ro0a"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m7mf1"]
 
