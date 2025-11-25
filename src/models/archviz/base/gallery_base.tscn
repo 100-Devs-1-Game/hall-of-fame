@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://dx68kka3l67tm"]
+[gd_scene load_steps=22 format=4 uid="uid://dx68kka3l67tm"]
 
 [ext_resource type="Material" uid="uid://cm85hsgxv07ws" path="res://materials/plaster/beige_wall.tres" id="1_bvoqr"]
 [ext_resource type="PackedScene" uid="uid://c3yt33mygjp1m" path="res://models/archviz/base/floor.tscn" id="1_ngpgr"]
@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://sxg7y2eobx5b" path="res://models/VFX/lights_circle.tscn" id="8_netjo"]
 [ext_resource type="PackedScene" uid="uid://bl51tyssvxmt7" path="res://models/archviz/base/rooms/room_02_longer_taller.tscn" id="8_nk41a"]
 [ext_resource type="Shader" uid="uid://vve7k7vuk078" path="res://scripts/shaders/light_cone.gdshader" id="9_7hs7p"]
-[ext_resource type="PackedScene" uid="uid://bnxtj87fmhb2t" path="res://models/nature/pots/pot_01.tscn" id="11_1264p"]
 [ext_resource type="PackedScene" uid="uid://c12baq2wybytl" path="res://models/pedestals/pedestal_01.tscn" id="12_y3ojp"]
 [ext_resource type="PackedScene" uid="uid://diur1b05qf6n5" path="res://models/archviz/base/logos/cggj_logo.tscn" id="14_vfcey"]
 
@@ -152,13 +151,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0)
 [node name="floor_middle_marble" parent="." instance=ExtResource("2_o02dk")]
 
 [node name="arcade_cabinet_01" parent="." instance=ExtResource("6_feqg7")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 824, 3.565, -2399)
-
-[node name="arcade_cabinet_02" parent="." instance=ExtResource("6_feqg7")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 824, 3.565, -2199)
-
-[node name="arcade_cabinet_03" parent="." instance=ExtResource("6_feqg7")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 824, 3.565, -2049)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 824, 3.565, -2221)
 
 [node name="rooms" type="Node3D" parent="."]
 
@@ -502,25 +495,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 770, 4129)
 [node name="lights_circle12" parent="Lights/light_circles" instance=ExtResource("8_netjo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 770, 4629)
 
+[node name="OmniLight3D" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1100, 133, -1454)
+visible = false
+light_energy = 40000.0
+omni_range = 203.44
+omni_attenuation = 2.13
+
 [node name="VFX" type="Node3D" parent="."]
-
-[node name="pot_01" parent="." instance=ExtResource("11_1264p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -406, 0, -1485)
-
-[node name="pot_02" parent="." instance=ExtResource("11_1264p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -406, 0, -1324)
-
-[node name="pot_03" parent="." instance=ExtResource("11_1264p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -406, 0, -1161)
-
-[node name="pot_04" parent="." instance=ExtResource("11_1264p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -406, 0, -1000)
-
-[node name="pot_05" parent="." instance=ExtResource("11_1264p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -406, 0, -836)
-
-[node name="pot_06" parent="." instance=ExtResource("11_1264p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -406, 0, -675)
 
 [node name="pedestal_01" parent="." instance=ExtResource("12_y3ojp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2330)
@@ -542,14 +524,6 @@ awards we can represent that as 3d models
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 16, 195, -2396)
 text = "Statue of the main character from Spiritkeeper can go in here
 and many some other items from the game including the title."
-
-[node name="Label3D2" type="Label3D" parent="annotations"]
-transform = Transform3D(-4.371139e-06, 0, 100, 0, 100, 0, -100, 0, -4.371139e-06, -742, 144, -1727)
-text = "I forgot to get rid
- of this part, maybe it can be
- an entrance to somewhere else?
-
-An \"admin\" only type of area?"
 
 [node name="Label3D4" type="Label3D" parent="annotations"]
 transform = Transform3D(-5.722046e-06, 0, -100, 0, 100, 0, 100, 0, -5.722046e-06, 721, 144, -1727)

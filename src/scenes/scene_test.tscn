@@ -15,7 +15,10 @@ background_mode = 2
 sky = SubResource("Sky_x8lw6")
 tonemap_mode = 4
 tonemap_exposure = 1.5
+ssr_enabled = true
+ssao_enabled = true
 glow_enabled = true
+adjustment_enabled = true
 
 [sub_resource type="VoxelGIData" id="VoxelGIData_1o0ef"]
 _data = {
@@ -40,7 +43,7 @@ sprint_speed = 200.0
 acceleration = 150.0
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-1.7496323e-08, 0.91639763, -0.4002691, 4.005702e-08, 0.4002691, 0.91639763, 1, 0, -4.37114e-08, 1024.1248, 1933.0531, -421.68823)
+transform = Transform3D(-4.371139e-08, 1, -1.1924881e-08, 0, 1.1924881e-08, 1, 1, 4.371139e-08, -5.2125306e-16, 1024.1248, 1933.0531, -421.68823)
 light_color = Color(0.9444271, 0.93478936, 0.8491416, 1)
 light_energy = 2.56
 shadow_enabled = true
