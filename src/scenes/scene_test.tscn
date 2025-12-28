@@ -37,10 +37,7 @@ _data = {
 environment = SubResource("Environment_qhnpt")
 
 [node name="Character" parent="." instance=ExtResource("2_1o0ef")]
-transform = Transform3D(-1.7003731e-07, 0, -3.89, 0, 3.89, 0, 3.89, 0, -1.7003731e-07, 0, 87.838104, -1822.5416)
-base_speed = 100.0
-sprint_speed = 200.0
-acceleration = 150.0
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 25.32254, -112.48932)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-4.371139e-08, 1, -1.1924881e-08, 0, 1.1924881e-08, 1, 1, 4.371139e-08, -5.2125306e-16, 1024.1248, 1933.0531, -421.68823)
@@ -49,8 +46,10 @@ light_energy = 2.56
 shadow_enabled = true
 
 [node name="gallery_base" parent="." instance=ExtResource("3_1o0ef")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 
 [node name="VoxelGI" type="VoxelGI" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.444885, 415.42017, 1316.5225)
+visible = false
 size = Vector3(2789.8228, 1330.8403, 7699.3047)
 data = SubResource("VoxelGIData_1o0ef")
