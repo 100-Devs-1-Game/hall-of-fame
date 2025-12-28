@@ -1,7 +1,6 @@
-[gd_scene load_steps=10 format=4 uid="uid://1inwv0rgomel"]
+[gd_scene load_steps=9 format=4 uid="uid://1inwv0rgomel"]
 
 [ext_resource type="Material" uid="uid://bbq7gdmjjp6ir" path="res://materials/simple/black_s.tres" id="1_86f6k"]
-[ext_resource type="VideoStream" uid="uid://ck3epl25at66m" path="res://assets/video/spiritkeeper.ogv" id="2_rmj6o"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_deibm"]
 
@@ -86,7 +85,6 @@ offset_bottom = 40.0
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="SubViewport/SubViewportContainer"]
 layout_mode = 2
-stream = ExtResource("2_rmj6o")
 autoplay = true
 
 [node name="VideoScreen" type="MeshInstance3D" parent="."]
